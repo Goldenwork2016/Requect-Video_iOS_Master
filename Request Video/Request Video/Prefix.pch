@@ -1,0 +1,70 @@
+//
+//  Prefix.pch
+//  Request Video
+//
+//  Created by NTechnosoft on 26/07/17.
+//  Copyright © 2017 GoldenWork Ltd. All rights reserved.
+//
+
+#ifndef Prefix_pch
+#define Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#pragma mark - Imported Class
+
+#import "AppDelegate.h"
+#import "IQKeyboardManager.h"
+#import "AFNetworking.h"
+#import "UIImageView+WebCache.h"
+#import "UIButton+WebCache.h"
+#import "ProgressHUD.h"
+#import "UITextView+Placeholder.h"
+
+#pragma mark - BASE CONFIGURATION
+
+#define Google_Api_Key @"AIzaSyDJ0ez8PDImnmvzI-1xm-vFkvxkNRhXKr4"
+
+//#define BASE_URL @"http://192.168.1.123/video_app/"
+#define BASE_URL @"http://viewying.com/video_app/"
+#define API BASE_URL @"ws/user/"
+
+#pragma mark - Authentication
+
+#define LOGIN API @"login"
+#define VERIFICATION API @"verification"
+
+#pragma mark - TWILIO
+
+#define SEND_SMS @"https://api.twilio.com/2010-04-01/Accounts/AC5d28f1b3e9eaab6e2080cc08dde677a8/Messages.json"
+#define ACOOUNT_SID @"AC5d28f1b3e9eaab6e2080cc08dde677a8"
+#define AUTH_TOKEN @"8ab80ec34a05a338d52a00d3cfb0e057"
+#define FROM_PHONE @"+12013717786"
+
+#pragma mark - Profile
+
+#define EDIT_PROFILE API @"edit_profile"
+#define UPDATE_PROFILE_PIC API @"edit_photo"
+#define PROFILE_PIC_PATH BASE_URL @"upload/profile_pic/"
+#define LOGOUT API @"logout"
+
+#pragma mark - Stream
+
+#define ADD_REQUEST API @"addrequest"
+#define GET_STREAMS API @"getstreams"
+#define GET_SEARCH API @"getsearch"
+
+#define GET_RESPONSES API @"requestvideo"
+#define ADD_RESPONSE API @"addresponse"
+#define REPORT_ABUSE API @"abuse_response"
+
+#define VIDEO_PATH BASE_URL @"upload/video/"
+#define VIDEO_THUMB_PATH VIDEO_PATH @"thumb/"
+
+#pragma mark - My
+
+#define MY_VIDEO API @"myvideo"
+#define VIDEO_FOR_ME API @"video_forme"
+
+#endif /* Prefix_pch */

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I4s-T0-ROu">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REQUEST VIDEO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egG-E7-9CR">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="Or7-s6-uDU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video.png" translatesAutoresizingMaskIntoConstraints="NO" id="HIG-WU-z2O">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="EBZ-6b-QNV"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="HIG-WU-z2O" firstAttribute="leading" secondItem="I4s-T0-ROu" secondAttribute="leading" constant="16" id="6xb-XD-Wvz"/>
+                                    <constraint firstItem="egG-E7-9CR" firstAttribute="leading" secondItem="I4s-T0-ROu" secondAttribute="leading" id="NjP-Hk-KE3"/>
+                                    <constraint firstItem="egG-E7-9CR" firstAttribute="centerY" secondItem="I4s-T0-ROu" secondAttribute="centerY" id="PYd-ZD-J79"/>
+                                    <constraint firstAttribute="trailing" secondItem="HIG-WU-z2O" secondAttribute="trailing" constant="16" id="Xti-Y7-f7N"/>
+                                    <constraint firstItem="egG-E7-9CR" firstAttribute="top" secondItem="HIG-WU-z2O" secondAttribute="bottom" constant="50" id="Zxx-yP-XEg"/>
+                                    <constraint firstAttribute="trailing" secondItem="egG-E7-9CR" secondAttribute="trailing" id="fme-Ew-4z9"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="I4s-T0-ROu" secondAttribute="bottom" id="TOI-kh-cGs"/>
+                            <constraint firstItem="I4s-T0-ROu" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="bPT-nk-G6K"/>
+                            <constraint firstAttribute="trailing" secondItem="I4s-T0-ROu" secondAttribute="trailing" id="fk3-CJ-UzD"/>
+                            <constraint firstItem="I4s-T0-ROu" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="lZl-Wk-iaM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="video.png" width="112" height="75"/>
+    </resources>
+</document>
